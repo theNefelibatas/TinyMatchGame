@@ -25,6 +25,7 @@ namespace TinyMatchGame
         DispatcherTimer timer = new DispatcherTimer();
         int tenthsOfSecondsElapsed;
         int matchesFound;
+        bool whetherStart = false;
         public MainWindow()
         {
             InitializeComponent();
@@ -72,11 +73,14 @@ namespace TinyMatchGame
                     interestingEmoji.RemoveAt(index);
                 }
             }
-
-            // start the timer and reset the variables
-            timer.Start();
-            tenthsOfSecondsElapsed = 0;
-            matchesFound = 0;
+            if (whetherStart)
+            {
+                    // start the timer and reset the variables
+                    timer.Start();
+                    tenthsOfSecondsElapsed = 0;
+                    matchesFound = 0;
+            }
+            
         }
 
         TextBlock lastTextBlockClicked;
@@ -110,6 +114,13 @@ namespace TinyMatchGame
             {
                 SetUpGame();
             }
+        }
+
+        private void StartGameButton_Click(object sender, RoutedEventArgs e)
+        {
+            whetherStart = true;
+            startButton.Visibility = Visibility.Collapsed;
+            timer.Start();
         }
     }
 }
