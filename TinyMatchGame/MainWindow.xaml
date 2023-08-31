@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TinyMatchGame"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="Find all of the matching emoji" Height="450" Width="400">
+    <Grid x:Name="mainGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="0" Grid.Column="3" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="1" Grid.Column="3" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="2" Grid.Column="2" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="2" Grid.Column="3" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock Grid.Row="3" Grid.Column="3" Text="?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="infoTextBlock" HorizontalAlignment="Center" Grid.Row="4" TextWrapping="Wrap" Text="Information TextBlock" VerticalAlignment="Center" Grid.ColumnSpan="4" FontSize="36" MouseDown="InfoTextBlock_MouseBlock"/>
     </Grid>
 </Window>
